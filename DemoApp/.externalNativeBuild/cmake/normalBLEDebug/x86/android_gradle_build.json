@@ -1,0 +1,41 @@
+
+{
+	"buildFiles" : 
+	[
+		"/Users/cerise/work/work/BLE.Simulator/Android/BLEEmulator/DemoApp/CMakeLists.txt"
+	],
+	"cleanCommands" : 
+	[
+		"/Users/cerise/Library/Android/sdk/cmake/3.6.3155560/bin/cmake --build /Users/cerise/work/work/BLE.Simulator/Android/BLEEmulator/DemoApp/.externalNativeBuild/cmake/NormalBLEDebug/x86 --target clean"
+	],
+	"cppFileExtensions" : [ "cpp" ],
+	"libraries" : 
+	{
+		"native-lib-Debug-x86" : 
+		{
+			"abi" : "x86",
+			"artifactName" : "native-lib",
+			"buildCommand" : "/Users/cerise/Library/Android/sdk/cmake/3.6.3155560/bin/cmake --build /Users/cerise/work/work/BLE.Simulator/Android/BLEEmulator/DemoApp/.externalNativeBuild/cmake/NormalBLEDebug/x86 --target native-lib",
+			"buildType" : "debug",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  --target=i686-none-linux-android --gcc-toolchain=/Users/cerise/Library/Android/sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/cerise/Library/Android/sdk/ndk-bundle/sysroot  -Dnative_lib_EXPORTS -isystem /Users/cerise/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /Users/cerise/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/x86/include -isystem /Users/cerise/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward  -isystem /Users/cerise/Library/Android/sdk/ndk-bundle/sysroot/usr/include/i686-linux-android -D__ANDROID_API__=23 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -frtti -fexceptions -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "/Users/cerise/work/work/BLE.Simulator/Android/BLEEmulator/DemoApp/src/main/cpp/native-lib.cpp",
+					"workingDirectory" : "/Users/cerise/work/work/BLE.Simulator/Android/BLEEmulator/DemoApp/.externalNativeBuild/cmake/NormalBLEDebug/x86"
+				}
+			],
+			"output" : "/Users/cerise/work/work/BLE.Simulator/Android/BLEEmulator/DemoApp/build/intermediates/cmake/NormalBLE/debug/obj/x86/libnative-lib.so",
+			"toolchain" : "8713552904200863991"
+		}
+	},
+	"toolchains" : 
+	{
+		"8713552904200863991" : 
+		{
+			"cCompilerExecutable" : "/Users/cerise/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang",
+			"cppCompilerExecutable" : "/Users/cerise/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++"
+		}
+	}
+}

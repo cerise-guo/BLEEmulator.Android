@@ -1,0 +1,112 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "com.blesim.demo"
+        minSdkVersion 23
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        buildConfigField( "boolean", "bleSim", 'Boolean.parseBoolean("false")' )
+        externalNativeBuild {
+            cmake {
+                cppFlags "-std=c++11 -frtti -fexceptions"
+            }
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+        }
+    }
+
+    flavorDimensions "groupa"
+    productFlavors{
+        SimBLE{
+            dimension "groupa"
+            buildConfigField( "boolean", "bleSim", 'Boolean.parseBoolean("true")' )
+        }
+        NormalBLE{
+            dimension "groupa"
+        }
+    }
+
+    externalNativeBuild {
+        cmake {
+            path "CMakeLists.txt"
+        }
+    }
+}
+
+task BLESimulator(){
+    group 'build'
+    description 'this will import BLE emulator.'
+    doLast{
+        println 'import ble emulator'
+
+        println "Root project: " + project.rootProject
+        println "Root dir: " + project.rootDir
+        println "project dir: " + project.projectDir
+
+        ant.replaceregexp(match: 'android.bluetooth.', replace: 'com.blesim.bluetooth.', flags: 'g', byline: true) {
+            fileset(dir: 'src', includes: '**/*.java')
+        }
+    }
+}
+
+task BLENative(){
+    group 'build'
+    description 'this will import native BLE library.'
+    doLast{
+        println 'import native ble lib'
+
+        println "Root project: " + project.rootProject
+        println "Root dir: " + project.rootDir
+        println "project dir: " + project.projectDir
+
+        ant.replaceregexp(match: 'import com.blesim.bluetooth.', replace: 'import android.bluetooth.', flags: 'g', byline: true) {
+            fileset(dir: 'src', includes: '**/*.java')
+        }
+
+        //change special file back which only exists in ble sim framework
+        ant.replaceregexp(match: 'android.bluetooth.services.BackgroundDelegate', replace: 'com.blesim.bluetooth.services.BackgroundDelegate', flags: 'g', byline: true) {
+            fileset(dir: 'src', includes: '**/*.java')
+        }
+    }
+}
+
+tasks.whenTaskAdded { task ->
+
+    if (task.name.contains("assembleDebug") || task.name.contains("assembleRelease")) {
+
+        android.applicationVariants.all { variant ->
+
+            println " variant 1 name : " + variant.name + " , task name : " + task.name
+
+            if( variant.name.contains("SimBLE")) {
+                println "contain SimBLE"
+                variant.javaCompiler.dependsOn(BLESimulator)
+            }
+            else if( variant.name.contains("NormalBLE")){
+                println "contain NormalBLE"
+                variant.javaCompiler.dependsOn(BLENative)
+            }
+        }
+    }
+
+    println "task name : " + task.name
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support.constraint:constraint-layout:1.1.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    compile project(':BLESimLibrary')
+}

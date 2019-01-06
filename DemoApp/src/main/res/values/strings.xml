@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">BLESimDemo</string>
+    <string name="button_a">Scan</string>
+    <string name="button_b">Stop Scan</string>
+    <string name="button_c">Connect/Discover</string>
+    <string name="button_d">set Notification</string>
+    <string name="button_e">Disconnect</string>
+    <string name="button_f">Read</string>
+    <string name="button_g">Write</string>
+    <string name="button_h">TBD</string>
+</resources>

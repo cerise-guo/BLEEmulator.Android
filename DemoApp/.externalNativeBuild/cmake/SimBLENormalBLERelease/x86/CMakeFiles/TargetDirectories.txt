@@ -1,0 +1,3 @@
+/Users/cerise/work/work/BLE.Simulator/Android/BLEEmulator/DemoApp/.externalNativeBuild/cmake/SimBLENormalBLERelease/x86/CMakeFiles/edit_cache.dir
+/Users/cerise/work/work/BLE.Simulator/Android/BLEEmulator/DemoApp/.externalNativeBuild/cmake/SimBLENormalBLERelease/x86/CMakeFiles/rebuild_cache.dir
+/Users/cerise/work/work/BLE.Simulator/Android/BLEEmulator/DemoApp/.externalNativeBuild/cmake/SimBLENormalBLERelease/x86/CMakeFiles/native-lib.dir

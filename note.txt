@@ -1,0 +1,69 @@
+Note for BLE simulator
+
+Log from real peripheral:
+
+12-07 20:00:41.580 17280-17280/com.blesim.demo D/ViewRootImpl@96bd7d2[MainActivity]: ViewPostIme pointer 0
+12-07 20:00:41.673 17280-17280/com.blesim.demo D/ViewRootImpl@96bd7d2[MainActivity]: ViewPostIme pointer 1
+12-07 20:00:41.678 17280-17280/com.blesim.demo D/BLESimApp: start scan
+12-07 20:00:41.680 17280-17280/com.blesim.demo D/BluetoothAdapter: STATE_ON
+12-07 20:00:41.682 17280-17280/com.blesim.demo I/chatty: uid=10089(u0_a89) com.blesim.demo identical 4 lines
+12-07 20:00:41.683 17280-17280/com.blesim.demo D/BluetoothAdapter: STATE_ON
+12-07 20:00:41.683 17280-17280/com.blesim.demo D/BluetoothLeScanner: Start Scan with callback
+12-07 20:00:41.685 17280-18392/com.blesim.demo D/BluetoothLeScanner: onScannerRegistered() - status=0 scannerId=8 mScannerId=0
+12-07 20:00:41.777 17280-17280/com.blesim.demo D/BLESimApp: new scan result : G5 , 69:A9:36:48:A9:33 , G5, -73
+12-07 20:00:41.779 17280-17280/com.blesim.demo D/BLESimApp: discovered target peripheral
+12-07 20:00:42.556 17280-17280/com.blesim.demo D/BLESimApp: scan result : G5
+12-07 20:00:42.617 17280-17280/com.blesim.demo D/BLESimApp: new scan result : null , 70:68:08:B7:61:2C , null, -58
+12-07 20:00:42.949 17280-17280/com.blesim.demo D/BLESimApp: scan result : null
+12-07 20:00:43.066 17280-17280/com.blesim.demo D/BLESimApp: scan result : G5
+12-07 20:00:43.320 17280-17280/com.blesim.demo D/BLESimApp: scan result : null
+12-07 20:00:43.818 17280-17296/com.blesim.demo I/zygote64: Do partial code cache collection, code=29KB, data=29KB
+12-07 20:00:43.819 17280-17296/com.blesim.demo I/zygote64: After code cache collection, code=29KB, data=29KB
+12-07 20:00:43.819 17280-17296/com.blesim.demo I/zygote64: Increasing code cache capacity to 128KB
+12-07 20:00:43.821 17280-17280/com.blesim.demo D/BLESimApp: scan result : G5
+12-07 20:00:43.869 17280-17280/com.blesim.demo D/BLESimApp: scan result : null
+12-07 20:00:44.238 17280-17280/com.blesim.demo D/BLESimApp: scan result : null
+12-07 20:00:44.582 17280-17280/com.blesim.demo D/BLESimApp: scan result : G5
+12-07 20:00:44.595 17280-17280/com.blesim.demo D/BLESimApp: scan result : null
+12-07 20:00:44.967 17280-17280/com.blesim.demo D/BLESimApp: scan result : null
+12-07 20:00:45.350 17280-17280/com.blesim.demo D/BLESimApp: scan result : null
+12-07 20:00:45.358 17280-17280/com.blesim.demo D/BLESimApp: scan result : G5
+12-07 20:00:45.898 17280-17280/com.blesim.demo D/BLESimApp: scan result : G5
+12-07 20:00:46.627 17280-17280/com.blesim.demo D/BLESimApp: scan result : null
+12-07 20:00:46.645 17280-17280/com.blesim.demo D/BLESimApp: scan result : G5
+12-07 20:00:47.433 17280-17280/com.blesim.demo D/BLESimApp: scan result : null
+12-07 20:00:47.446 17280-17280/com.blesim.demo D/BLESimApp: scan result : G5
+12-07 20:00:47.888 17280-17280/com.blesim.demo D/ViewRootImpl@96bd7d2[MainActivity]: ViewPostIme pointer 0
+12-07 20:00:47.964 17280-17280/com.blesim.demo D/ViewRootImpl@96bd7d2[MainActivity]: ViewPostIme pointer 1
+12-07 20:00:47.965 17280-17280/com.blesim.demo D/BLESimApp: stop scan
+12-07 20:00:47.966 17280-17280/com.blesim.demo D/BluetoothAdapter: STATE_ON
+12-07 20:00:47.967 17280-17280/com.blesim.demo I/chatty: uid=10089(u0_a89) com.blesim.demo identical 2 lines
+12-07 20:00:47.968 17280-17280/com.blesim.demo D/BluetoothAdapter: STATE_ON
+12-07 20:00:47.968 17280-17280/com.blesim.demo D/BluetoothLeScanner: Stop Scan with callback
+12-07 20:00:49.127 17280-17280/com.blesim.demo D/ViewRootImpl@96bd7d2[MainActivity]: ViewPostIme pointer 0
+12-07 20:00:49.189 17280-17280/com.blesim.demo D/ViewRootImpl@96bd7d2[MainActivity]: ViewPostIme pointer 1
+12-07 20:00:49.191 17280-17280/com.blesim.demo D/BLESimApp: will connect and discover service
+12-07 20:00:49.195 17280-17280/com.blesim.demo D/BluetoothGatt: connect() - device: 69:A9:36:48:A9:33, auto: false
+12-07 20:00:49.195 17280-17280/com.blesim.demo D/BluetoothAdapter: isSecureModeEnabled
+12-07 20:00:49.196 17280-17280/com.blesim.demo D/BluetoothGatt: registerApp()
+12-07 20:00:49.196 17280-17280/com.blesim.demo D/BluetoothGatt: registerApp() - UUID=ec5d4aa4-fc40-4a8a-b52f-e08a9e5e3369
+12-07 20:00:49.206 17280-17280/com.blesim.demo D/BluetoothGatt: discoverServices() - device: 69:A9:36:48:A9:33
+12-07 20:00:49.207 17280-18392/com.blesim.demo D/BluetoothGatt: onClientRegistered() - status=0 clientIf=8
+12-07 20:00:54.501 17280-18392/com.blesim.demo D/BluetoothGatt: onClientConnectionState() - status=0 clientIf=8 device=69:A9:36:48:A9:33
+12-07 20:00:54.509 17280-18392/com.blesim.demo D/BLESimApp: onConnectionStateChange : old : 0 -> new : 2
+12-07 20:00:54.509 17280-18392/com.blesim.demo D/BLESimApp: success status
+12-07 20:00:54.509 17280-18392/com.blesim.demo D/BLESimApp: BLE connected
+12-07 20:00:54.509 17280-18392/com.blesim.demo D/BLESimApp: BLE start discovering service
+12-07 20:00:54.510 17280-18392/com.blesim.demo D/BluetoothGatt: discoverServices() - device: 69:A9:36:48:A9:33
+12-07 20:00:55.157 17280-18392/com.blesim.demo D/BluetoothGatt: onConnectionUpdated() - Device=69:A9:36:48:A9:33 interval=6 latency=0 timeout=500 status=0
+12-07 20:00:55.374 17280-18392/com.blesim.demo D/BluetoothGatt: onSearchComplete() = Device=69:A9:36:48:A9:33 Status=0
+12-07 20:00:55.379 17280-18392/com.blesim.demo D/BLESimApp: discovered service: Primary , 00001801-0000-1000-8000-00805f9b34fb
+12-07 20:00:55.382 17280-18392/com.blesim.demo D/BLESimApp: discovered service: Primary , 00001800-0000-1000-8000-00805f9b34fb
+12-07 20:00:55.385 17280-18392/com.blesim.demo D/BLESimApp: discovered service: Primary , 0000180d-0000-1000-8000-00805f9b34fb
+12-07 20:00:55.386 17280-18392/com.blesim.demo D/BLESimApp: characteristic : 00002a37-0000-1000-8000-00805f9b34fb
+12-07 20:00:55.387 17280-18392/com.blesim.demo D/BLESimApp: characteristic : android.bluetooth.BluetoothGattCharacteristic@17c8689
+12-07 20:00:55.388 17280-18392/com.blesim.demo D/BLESimApp: characteristic : 00002a38-0000-1000-8000-00805f9b34fb
+12-07 20:00:55.388 17280-18392/com.blesim.demo D/BLESimApp: characteristic : android.bluetooth.BluetoothGattCharacteristic@9f9368e
+12-07 20:00:55.389 17280-18392/com.blesim.demo D/BLESimApp: characteristic : 00002a39-0000-1000-8000-00805f9b34fb
+12-07 20:00:55.389 17280-18392/com.blesim.demo D/BLESimApp: characteristic : android.bluetooth.BluetoothGattCharacteristic@d8faeaf
+12-07 20:00:55.449 17280-18392/com.blesim.demo D/BluetoothGatt: onConnectionUpdated() - Device=69:A9:36:48:A9:33 interval=39 latency=0 timeout=500 status=0

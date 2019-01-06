@@ -1,0 +1,41 @@
+
+{
+	"buildFiles" : 
+	[
+		"/Users/cerise/work/work/BLE.Simulator/Android/BLEEmulator/DemoApp/CMakeLists.txt"
+	],
+	"cleanCommands" : 
+	[
+		"/Users/cerise/Library/Android/sdk/cmake/3.6.3155560/bin/cmake --build /Users/cerise/work/work/BLE.Simulator/Android/BLEEmulator/DemoApp/.externalNativeBuild/cmake/simBLE/arm64-v8a --target clean"
+	],
+	"cppFileExtensions" : [ "cpp" ],
+	"libraries" : 
+	{
+		"native-lib-Debug-arm64-v8a" : 
+		{
+			"abi" : "arm64-v8a",
+			"artifactName" : "native-lib",
+			"buildCommand" : "/Users/cerise/Library/Android/sdk/cmake/3.6.3155560/bin/cmake --build /Users/cerise/work/work/BLE.Simulator/Android/BLEEmulator/DemoApp/.externalNativeBuild/cmake/simBLE/arm64-v8a --target native-lib",
+			"buildType" : "debug",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=/Users/cerise/Library/Android/sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/cerise/Library/Android/sdk/ndk-bundle/sysroot  -Dnative_lib_EXPORTS -isystem /Users/cerise/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /Users/cerise/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/arm64-v8a/include -isystem /Users/cerise/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward  -isystem /Users/cerise/Library/Android/sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=23 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -frtti -fexceptions -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "/Users/cerise/work/work/BLE.Simulator/Android/BLEEmulator/DemoApp/src/main/cpp/native-lib.cpp",
+					"workingDirectory" : "/Users/cerise/work/work/BLE.Simulator/Android/BLEEmulator/DemoApp/.externalNativeBuild/cmake/simBLE/arm64-v8a"
+				}
+			],
+			"output" : "/Users/cerise/work/work/BLE.Simulator/Android/BLEEmulator/DemoApp/build/intermediates/cmake/simBLE/obj/arm64-v8a/libnative-lib.so",
+			"toolchain" : "8713552904200863991"
+		}
+	},
+	"toolchains" : 
+	{
+		"8713552904200863991" : 
+		{
+			"cCompilerExecutable" : "/Users/cerise/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang",
+			"cppCompilerExecutable" : "/Users/cerise/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++"
+		}
+	}
+}
